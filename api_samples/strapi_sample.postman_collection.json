@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "5577c0b3-c516-40b6-91b2-e527fca5a48d",
+		"name": "strapi_sample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:1337/activities_price",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Discount\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1337/activities_price",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"activities_price"
+					]
+				},
+				"description": "Update activity Price"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1337/activities",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"Price\": 198,\n        \"ActivitiesContent\": [\n            {\n                \"Title\": \"test\",\n                \"SubTitle\": \"dasdasda\",\n                \"Description\": \"asdasdasdas asdsadasd asadasdasdas \",\n                \"Language\": \"EN\"\n            }\n        ],\n        \"Pictures\": []\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1337/activities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"activities"
+					]
+				},
+				"description": "Add new activity"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
