@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_cms_activities",
+  "info": {
+    "name": "Activities",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": false
+    },
+    "SubTitle": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Language": {
+      "type": "enumeration",
+      "enum": [
+        "EN",
+        "ES",
+        "DE"
+      ],
+      "default": "EN",
+      "required": true
+    }
+  }
+}

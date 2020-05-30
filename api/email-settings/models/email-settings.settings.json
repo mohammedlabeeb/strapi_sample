@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "email_settings",
+  "info": {
+    "name": "Email Settings"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "From": {
+      "type": "email",
+      "required": true
+    },
+    "To": {
+      "type": "email",
+      "required": true
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "SMTP_Password": {
+      "type": "password",
+      "required": true
+    },
+    "SMTP_Email": {
+      "type": "email",
+      "required": true
+    },
+    "SMTP_Provider": {
+      "type": "enumeration",
+      "enum": [
+        "Gmail",
+        "outlook"
+      ],
+      "default": "Gmail",
+      "required": true
+    }
+  }
+}

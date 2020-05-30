@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "activities",
+  "info": {
+    "name": "Activities"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "ActivitiesContent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cms.activities"
+    },
+    "Pictures": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Price": {
+      "type": "float"
+    }
+  }
+}
